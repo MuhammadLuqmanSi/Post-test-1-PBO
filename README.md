@@ -1,6 +1,5 @@
 # Post-test-1-PBO
-nama: Muhammad Luqman
-nim : 2309116068
+Muhammad Luqman (2309116068)
 
 ## PACKAGE : com.mycompany.laundry
       package com.mycompany.laundry;
@@ -33,7 +32,7 @@ nim : 2309116068
         }
 
        
-        String completedItemName = "Shirt";  // Simulating item name to be marked as completed
+        String completedItemName = "Shirt";  
 
         boolean found = false;
         for (LaundryItem item : laundryList) {
@@ -58,3 +57,69 @@ nim : 2309116068
         System.out.println("\nTotal Price for all items: Rp " + totalPrice);
           }
          }
+## PACKAGE : laundry.management
+      package laundry.management;
+      
+      /**
+       *
+       * @author Luqman
+       */
+      public class LaundryItem {
+          // Properties
+          private String itemName;
+          private double weight;
+          private boolean isCompleted;
+      
+          // Constructor
+          public LaundryItem(String itemName, double weight) {
+              this.itemName = itemName;
+              this.weight = weight;
+              this.isCompleted = true;  
+          }
+      
+          public void markAsCompleted() {
+              this.isCompleted = true;
+          }
+      
+          public String getItemName() {
+              return itemName;
+          }
+      
+          public double getWeight() {
+              return weight;
+          }
+      
+          public boolean isCompleted() {
+              return isCompleted;
+          }
+      
+          public void displayItem() {
+              System.out.println("Item Name: " + itemName);
+              System.out.println("Weight: " + weight + " kg");
+              System.out.println("Status: " + (isCompleted ? "Completed" : "In Progress"));
+          }
+      }
+### Hasil
+--- exec:3.1.0:exec (default-cli) @ laundry ---
+=== LAUNDRY MANAGEMENT SYSTEM ===
+
+=== Laundry Items ===
+Item Name: PDH
+Weight: 1.2 kg
+Status: Completed
+
+Item Name: CELANA
+Weight: 0.8 kg
+Status: Completed
+
+Item Name: JAKET
+Weight: 2.0 kg
+Status: Completed
+
+Item Name: HANDUK
+Weight: 0.5 kg
+Status: Completed
+
+
+Total Price for all items: Rp 36000.0
+------------------------------------------------------------------------

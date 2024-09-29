@@ -3,20 +3,20 @@ nama: Muhammad Luqman
 nim : 2309116068
 
 ## PACKAGE : com.mycompany.laundry
-package com.mycompany.laundry;
-import laundry.management.LaundryItem;
-import java.util.ArrayList;
-
-/**
- *
- * @author Luqman
- */
-public class Laundry {
-
-   static final double PRICE_PER_KG = 8000;
-
-    public static void main(String[] args) {
-        ArrayList<LaundryItem> laundryList = new ArrayList<>();
+      package com.mycompany.laundry;
+      import laundry.management.LaundryItem;
+      import java.util.ArrayList;
+      
+      /**
+       *
+       * @author Luqman
+       */
+      public class Laundry {
+      
+         static final double PRICE_PER_KG = 8000;
+      
+          public static void main(String[] args) {
+              ArrayList<LaundryItem> laundryList = new ArrayList<>();
 
         System.out.println("=== LAUNDRY MANAGEMENT SYSTEM ===");
 
@@ -56,5 +56,5 @@ public class Laundry {
         }
 
         System.out.println("\nTotal Price for all items: Rp " + totalPrice);
-    }
-}
+          }
+         }

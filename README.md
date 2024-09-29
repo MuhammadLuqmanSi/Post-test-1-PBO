@@ -65,12 +65,12 @@ Muhammad Luqman (2309116068)
        * @author Luqman
        */
       public class LaundryItem {
-          // Properties
+          
           private String itemName;
           private double weight;
           private boolean isCompleted;
       
-          // Constructor
+         
           public LaundryItem(String itemName, double weight) {
               this.itemName = itemName;
               this.weight = weight;

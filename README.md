@@ -32,7 +32,7 @@ Muhammad Luqman (2309116068)
         }
 
        
-        String completedItemName = "Shirt";  
+        String completedItemName = "PDH";  
 
         boolean found = false;
         for (LaundryItem item : laundryList) {
@@ -74,7 +74,7 @@ Muhammad Luqman (2309116068)
           public LaundryItem(String itemName, double weight) {
               this.itemName = itemName;
               this.weight = weight;
-              this.isCompleted = true;  
+              this.isCompleted = False;  
           }
       
           public void markAsCompleted() {
@@ -106,20 +106,21 @@ Muhammad Luqman (2309116068)
 === Laundry Items ===
 Item Name: PDH
 Weight: 1.2 kg
-Status: Completed
+Status: In Progress
 
 Item Name: CELANA
 Weight: 0.8 kg
-Status: Completed
+Status: In Progress
 
 Item Name: JAKET
 Weight: 2.0 kg
-Status: Completed
+Status: In Progress
 
 Item Name: HANDUK
 Weight: 0.5 kg
-Status: Completed
+Status: In Progress
 
+Item 'PDH' marked as completed.
 
 Total Price for all items: Rp 36000.0
 ------------------------------------------------------------------------

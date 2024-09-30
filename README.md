@@ -124,3 +124,52 @@ Item 'PDH' marked as completed.
 
 Total Price for all items: Rp 36000.0
 ------------------------------------------------------------------------
+
+Program ini adalah sebuah sistem manajemen laundry sederhana yang menggunakan dua kelas, yaitu Laundry dan LaundryItem. Program ini mengelola daftar item laundry, menampilkan detail item, menandai status item sebagai selesai (completed), serta menghitung total harga dari semua item laundry berdasarkan beratnya. Berikut adalah penjelasan rinci untuk setiap bagian dari program:
+
+1. Kelas LaundryItem (package: laundry.management)
+Kelas ini mewakili setiap item laundry yang disimpan dalam sistem.
+
+Atribut:
+
+itemName (String): Nama dari item laundry, misalnya "PDH", "JAKET".
+weight (double): Berat dari item dalam kilogram (kg).
+isCompleted (boolean): Status yang menunjukkan apakah item sudah selesai dikerjakan atau belum (false = belum selesai, true = selesai).
+Konstruktor:
+
+Menerima dua parameter (itemName dan weight), dan menginisialisasi nilai isCompleted menjadi false secara default, artinya saat item dibuat, statusnya belum selesai.
+Metode:
+
+markAsCompleted(): Mengubah status item menjadi "completed" (menyetel isCompleted ke true).
+getItemName(): Mengembalikan nama item.
+getWeight(): Mengembalikan berat item.
+isCompleted(): Mengembalikan status isCompleted (true atau false).
+displayItem(): Menampilkan informasi tentang item (nama, berat, dan status selesai atau belum).
+
+2. Kelas Laundry (package: com.mycompany.laundry)
+Kelas ini adalah titik awal program dan berfungsi sebagai sistem manajemen laundry.
+
+Atribut:
+
+PRICE_PER_KG: Harga tetap per kilogram untuk laundry, yaitu Rp 8000.
+Metode main (Entry Point):
+
+Membuat daftar laundry (ArrayList<LaundryItem>): Program membuat daftar yang berisi beberapa item laundry (LaundryItem), seperti "PDH", "CELANA", "JAKET", dan "HANDUK".
+
+Menampilkan daftar item laundry: Menggunakan perulangan for untuk memanggil metode displayItem() pada setiap item dalam daftar, sehingga menampilkan informasi setiap item (nama, berat, status).
+
+Menandai item sebagai selesai: Program mencari item dengan nama tertentu (misalnya, "PDH") dan menandainya sebagai selesai menggunakan metode markAsCompleted(). Jika item ditemukan, maka statusnya akan berubah menjadi "Completed", dan jika tidak ditemukan, program akan menampilkan pesan "Item not found".
+
+Menghitung total harga laundry: Menghitung total biaya berdasarkan berat semua item di dalam daftar. Total harga didapat dengan mengalikan berat setiap item dengan harga per kilogram (PRICE_PER_KG).
+
+Menampilkan total harga: Setelah total harga dihitung, program menampilkan jumlah total dalam format "Rp".
+
+3. Fungsi Program:
+   
+Menambahkan item laundry ke dalam daftar.
+
+Menampilkan detail item laundry (nama, berat, dan status selesai/belum).
+
+Menandai item tertentu sebagai selesai (completed).
+
+Menghitung dan menampilkan total harga laundry berdasarkan berat semua item.
